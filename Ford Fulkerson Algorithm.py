@@ -54,7 +54,7 @@ class MaxFlowAlgorithm:
             while not j == s:
                 i=prt[j]
                 residualgraph[i][j] -= pathflow                   #calculating the new capacity of each edge
-                #residualgraph[j][i] += pathflow
+                residualgraph[j][i] += pathflow
                 j=prt[j]
                     
             maximum_flow += pathflow
