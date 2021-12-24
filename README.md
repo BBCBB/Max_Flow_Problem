@@ -5,6 +5,6 @@ Ford Fulkerson Algorithm can be used to solve maximum flow problems in graph the
 
 In this algorithm, you can choose between DFS or BFS traversal methods. If you choose BFS, the algorithm tends to consider the node that has stayed in the queue the longest. On the other hand, if you select the DFS method, the algorithm will consider the node added last.
 
-About the time this algorithm takes to solve the maximum flow problem: each iteration of the algorithm icludes finding a path, which refers to "Reachability" problem. Finding a path takes O(n^2) time. On the other hand, this algorithm comprises nC iterations in the worst case scenario where "n" is number of the nodes and "C" is the maximum capacity of edges. Therefore, it takes the algorithm O(Cn^3) to solve the max flow problem.
+About the time this algorithm takes to solve the maximum flow problem: each iteration of the algorithm icludes finding a path, which refers to "Reachability" problem. Finding a path takes O(n^2) time. On the other hand, this algorithm comprises nC iterations in the worst case scenario where "n" is number of the nodes (except the source and the sink) and "C" is the maximum capacity of edges. Therefore, it takes the algorithm O(Cn^3) to solve the max flow problem.
 
 DFS strategy is a little bit faster than BFS to traverse the nodes.
