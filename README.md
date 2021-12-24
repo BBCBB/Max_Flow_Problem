@@ -7,4 +7,6 @@ In this algorithm, you can choose between DFS or BFS traversal methods. If you c
 
 About the time the original ford-fulkerson algorithm takes to solve the maximum flow problem: each iteration of the algorithm icludes finding a path, which refers to "Reachability" problem. Finding a path takes O(n^2) time. On the other hand, this algorithm comprises nC iterations in the worst case scenario where "n" is number of the nodes (except the source and the sink) and "C" is the maximum capacity of edges. Therefore, it takes the algorithm O(Cn^3) to solve the max flow problem.
 
+We tend to choose the BFS strategy since we can be sure that we have traversed the shortest path with the first occurrence of the destination node. However, that's not true about the DFS strategy. Even if it finds the best path, it should traverse all the nodes to ensure there are no other better solutions. The shortest path refers to the path with fewer edges (regardless of its capacity, flow, etc.)
+
 The maximum flow in the example graph is 15.0
