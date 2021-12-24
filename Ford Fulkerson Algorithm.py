@@ -47,7 +47,8 @@ class MaxFlowAlgorithm:
             j=t                       # begin from the sink node and backtrack until you reach the source
                 
             while not j == s:
-                pathflow=min(pathflow, residualgraph[prt[j]][j])  #we need to calculate the min flow of the path
+                i=prt[j]
+                pathflow=min(pathflow, residualgraph[i][j])  #we need to calculate the min flow of the path
                                                                   #to attaint the residual graph in each iteration
                 j=prt[j]
             j=t        
