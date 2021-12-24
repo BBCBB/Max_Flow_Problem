@@ -7,6 +7,4 @@ In this algorithm, you can choose between DFS or BFS traversal methods. If you c
 
 About the time this algorithm takes to solve the maximum flow problem: each iteration of the algorithm icludes finding a path, which refers to "Reachability" problem. Finding a path takes O(n^2) time. On the other hand, this algorithm comprises nC iterations in the worst case scenario where "n" is number of the nodes (except the source and the sink) and "C" is the maximum capacity of edges. Therefore, it takes the algorithm O(Cn^3) to solve the max flow problem.
 
-DFS strategy is a little bit faster than BFS to traverse the nodes.
-
 The maximum flow in the example graph is 15.0
