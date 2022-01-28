@@ -1,5 +1,4 @@
 # Discrete-Optimization
-This repository contains a variety of algorithms to solve descrete optimization problems
 
 Ford Fulkerson Algorithm can be used to solve maximum flow problems in graph theory. It's an iterative method through which we tend to traverse the graph (network) nodes to find a path from the source node to the sink node. Afterward, we should find the minimum capacity along this path and subtract it from the capacity of all the edges of the path. This minimum flow should be held on one hand as the maximum flow of the network to be updated in the next iteration by addition. To put it another way, it means that if you have calculated the min flow of the first path as mf1 and the second path as mf2, and you have visited the sink node, the maximum flow of the network is mf1+mf2.
 
